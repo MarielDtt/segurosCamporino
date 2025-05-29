@@ -17,17 +17,49 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #F9F9F9;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+layer components {
+  .display1 {
+    @apply text-display1 font-poppins;
+  }
+  .display2 {
+    @apply text-display2 font-poppins;
+  }
+  .display3 {
+    @apply text-display3 font-poppins;
+    
+  }
+  .title1 {
+    @apply text-title1 font-poppins;
+  }
+  .title2 {
+    @apply text-title2 font-poppins;
+  }
+  .title3 {
+    @apply text-title3 font-poppins;
+  }
+  .subtitle1 {
+    @apply text-subtitle1 font-poppins;
+  }
+  .subtitle2 {
+    @apply text-subtitle2 font-poppins;
+  }
+  .bodyBold {
+    @apply text-bodyBold font-poppins;
+  }
+  .body {
+    @apply text-body font-poppins;
+  }
+  .signal1 {
+    @apply text-signal1 font-poppins;
+  }
+  .caption {
+    @apply text-caption font-poppins;
+  }
+  .signal2 {
+    @apply text-signal2 font-poppins;
   }
 }
