@@ -1,3 +1,5 @@
+"use client"
+import { Button } from "../button";
 
 
 
@@ -23,6 +25,10 @@ const Formulario = () => {
         <div className="flex flex-col space-y-2">
           <label className="text-body text-primary-500" > Mensaje:</label>
           <textarea name="subject" id="subject" className="w-[314px] h-[96px] rounded-md border-primary-400 border bg-Background-Lilac" />
+        </div>
+        <div>
+          <Button text="Enviar"/>
+        
         </div>
      
       </form>
