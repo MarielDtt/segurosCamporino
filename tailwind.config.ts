@@ -52,6 +52,7 @@ const config: Config = {
         signal1: ["14px", { lineHeight: "20px", letterSpacing: "0.84px", fontWeight: "400" }],
         caption: ["12px", { lineHeight: "20px", fontWeight: "400" }],
         signal2: ["10px", { lineHeight: "12px", letterSpacing: "0.5px", fontWeight: "400" }],
+        signal3: ["8px", { lineHeight: "8px", letterSpacing: "0.5px", fontWeight: "400" }],
       },
       screens: {
         sm: "393px",

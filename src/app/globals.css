@@ -62,4 +62,7 @@ layer components {
   .signal2 {
     @apply text-signal2 font-poppins;
   }
+  .signal3 {
+    @apply text-signal3 font-poppins;
+  }
 }
