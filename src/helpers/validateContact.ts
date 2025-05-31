@@ -13,7 +13,7 @@ const ValidateContact = (Input: IContact) => {
     if (!Input.name) {
         errors.name = "Campo Requerido"
     } else if (!nameRegex.test(Input.name.trim())) {
-        errors.name = "Nombre y Apellido Invalido, Formato Esperado: Solo Letras Nombre y Apellido"
+        errors.name = "Nombre y Apellido Invalido, Formato Esperado: Solo Letras"
     }
 
     if (!Input.email) {
@@ -25,7 +25,7 @@ const ValidateContact = (Input: IContact) => {
       if (!Input.subject) {
         errors.subject = "Campo Requerido"
     } else if (!subjectRegex.test(Input.subject.trim())) {
-        errors.subject = "Asunto Invalido, Formato Esperado: Solo Letras con un Maximo de 50 Caracteres"
+        errors.subject = "Asunto Invalido, Formato Esperado: Solo Letras Maximo 50 Caracteres"
     }
 
        if (!Input.message) {

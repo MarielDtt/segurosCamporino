@@ -21,11 +21,18 @@ const Form = () => {
     message: ""
   })
 
+  const [touchInput, setTouchInput] = useState<{ name: boolean; email: boolean, subject: boolean, message: boolean }>({
+    name: false,
+    email: false,
+    subject: false,
+    message: false
+  });
+
   const handleInput = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = event.target;
-    
+
     const newFormData = { ...formData, [name]: value }; //crea una copia de formData
-    
+
     setFormData(newFormData); //Actualiza el estado formData con los nuevos datos del formulario
 
     setErrors(ValidateContact(newFormData)); //Actualiza el estado errors para mostrar o no los mensajes de error debajo del campo correspondiente.
@@ -34,8 +41,30 @@ const Form = () => {
   const handleOnSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
+    });
 
+    setTouchInput({
+      name: false,
+      email: false,
+      subject: false,
+      message: false
+    });
   }
+
+   const handleBlur = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name } = event.target
+
+        setTouchInput({
+            ...touchInput,
+            [name]: true
+        })
+        setErrors(ValidateContact(formData));
+    }
 
   return (
     <div className="w-full h-[494px]">
@@ -51,8 +80,10 @@ const Form = () => {
             name="name"
             value={formData.name}
             onChange={handleInput}
+            onBlur={handleBlur}
           />
-          {errors.name && <p className="text-signal3 text-red-600">{errors.name}</p>}
+          {touchInput.name && <p className="text-signal3 text-red-600">{errors.name}</p>}
+       
         </div>
         <div className="flex flex-col space-y-2">
           <label className="text-body text-primary-500" > Email:</label>
@@ -63,8 +94,9 @@ const Form = () => {
             id="email"
             value={formData.email}
             onChange={handleInput}
+            onBlur={handleBlur}
           />
-          {errors.email && <p className="text-signal3 text-red-600">{errors.email}</p>}
+          {touchInput.email && <p className="text-signal3 text-red-600">{errors.email}</p>}
         </div>
         <div className="flex flex-col space-y-2">
           <label className="text-body text-primary-500" > Asunto:</label>
@@ -75,8 +107,9 @@ const Form = () => {
             id="subject"
             value={formData.subject}
             onChange={handleInput}
+            onBlur={handleBlur}
           />
-          {errors.subject && <p className="text-signal3 text-red-600">{errors.subject}</p>}
+          {touchInput.subject && <p className="text-signal3 text-red-600">{errors.subject}</p>}
         </div>
         <div className="flex flex-col space-y-2">
           <label className="text-body text-primary-500" > Mensaje:</label>
@@ -86,8 +119,9 @@ const Form = () => {
             id="message"
             value={formData.message}
             onChange={handleInput}
+            onBlur={handleBlur}
           />
-          {errors.message && <p className="text-signal3 text-red-600">{errors.message}</p>}
+          {touchInput.message && <p className="text-signal3 text-red-600">{errors.message}</p>}
         </div>
         <div>
           <Button text="Enviar" type="submit" />
