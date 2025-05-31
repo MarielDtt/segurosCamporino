@@ -7,7 +7,7 @@ import { Instagram, Facebook } from 'lucide-react';
 const Footer = () => {
 
     return (
-        <div className="flex w-full bg-primary-600 h-[120px] px-4 py-2 justify-between items-center lg:h-24 lg:px-16 lg:py-4 mt-6 ">
+        <div className="flex w-full bg-primary-600 h-[120px] px-4 py-2 justify-between items-center lg:h-24 lg:px-16 lg:py-4 mt-20 ">
             <div className="flex  flex-col w-full px-4 py-2 justify-between items-center ">
                 <div className="flex w-full justify-between items-center mb-2">
                     <Image
@@ -31,10 +31,10 @@ const Footer = () => {
                 </div>
                 <div className='flex mt-2'>
                     <a>
-                        <p className='text-Background-Lilac text-signal2'>Términos y condiciones ·</p>
+                        <p className='text-Background-Lilac text-signal2'>Términos y condiciones--- </p>
                     </a>
                     <a>
-                        <p className='text-Background-Lilac text-signal2'>Política de privacidad</p>
+                        <p className='text-Background-Lilac text-signal2'> Política de privacidad</p>
                     </a>
                 </div>
                 <div className='mt-2'>

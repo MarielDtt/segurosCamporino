@@ -1,6 +1,6 @@
 import Carrusel from "@/components/carrusel";
 import Elegirnos from "@/components/elegirnos";
-import Formulario from "@/components/formulario";
+import Form from "@/components/form";
 import MiniCarrusel from "@/components/minicarrusel";
 import Resenia from "@/components/resenia";
 export default function Home() {
@@ -18,8 +18,8 @@ export default function Home() {
         <div className="w-[390px] h-[1380px] mt-6 flex justify-center items-center bg-lime-500 m-auto">
         <Resenia/>
       </div>
-        <div className="w-[390px] h-[494px] mt-6 flex justify-center items-center bg-Background-Default m-auto">
-        <Formulario />
+        <div className="w-[390px] h-[600px] mt-6 flex justify-center items-center bg-Background-Default m-auto">
+        <Form />
       </div>
     </div>
   );
