@@ -56,15 +56,17 @@ const Form = () => {
     });
   }
 
-   const handleBlur = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name } = event.target
+  const handleBlur = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name } = event.target
 
-        setTouchInput({
-            ...touchInput,
-            [name]: true
-        })
-        setErrors(ValidateContact(formData));
-    }
+    setTouchInput({
+      ...touchInput,
+      [name]: true
+    })
+    setErrors(ValidateContact(formData));
+  }
+
+  const isFormInvalid = Object.values(errors).some(error => error !== "") || Object.values(formData).some(value => value.trim() === "");
 
   return (
     <div className="w-full h-[494px]">
@@ -83,7 +85,7 @@ const Form = () => {
             onBlur={handleBlur}
           />
           {touchInput.name && <p className="text-signal3 text-red-600">{errors.name}</p>}
-       
+
         </div>
         <div className="flex flex-col space-y-2">
           <label className="text-body text-primary-500" > Email:</label>
@@ -124,7 +126,11 @@ const Form = () => {
           {touchInput.message && <p className="text-signal3 text-red-600">{errors.message}</p>}
         </div>
         <div>
-          <Button text="Enviar" type="submit" />
+          <Button
+            text="Enviar"
+            type="submit"
+            disabled={isFormInvalid}
+          />
 
         </div>
 
