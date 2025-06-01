@@ -18,7 +18,7 @@ export default function Home() {
         <div className="w-[390px] h-[512px] mt-6 flex justify-center items-center bg-Background-Default m-auto">
         <Resenia/>
       </div>
-        <div className="w-[390px] h-[600px] mt-6 flex justify-center items-center bg-Background-Default m-auto">
+        <div className="w-[390px] h-[528px] mt-6 flex justify-center items-center bg-fuchsia-700 m-auto">
         <Form />
       </div>
     </div>
