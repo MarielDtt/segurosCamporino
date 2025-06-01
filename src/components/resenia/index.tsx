@@ -4,7 +4,7 @@ const Resenia = () => {
   return (
     <div className="w-full h-[400px] mt-4">
       <p className="mt-4 text-center text-title1 text-primary-600">Clientes Satisfechos</p>
-      <div className='space-y-4'>
+      <div className='space-y-4 pt-4'>
         <div className="flex w-full h-[96px] p-2 space-x-4 shadow-md">
           <Image
             src="/Nora.png"

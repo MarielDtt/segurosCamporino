@@ -12,7 +12,7 @@ export default function Home() {
       <div className="w-[390px] h-[76px] mt-6 bg-slate-400 flex justify-center items-center m-auto">
         <MiniCarrusel />
       </div>
-      <div className="w-[390px] h-[1380px] mt-6 flex justify-center items-center bg-red-500 m-auto">
+      <div className="w-[390px] h-[1476x] mt-6 flex justify-center items-center bg-Background-Default m-auto">
         <Elegirnos />
       </div>
         <div className="w-[390px] h-[400px] mt-6 flex justify-center items-center bg-Background-Default-400 m-auto">
