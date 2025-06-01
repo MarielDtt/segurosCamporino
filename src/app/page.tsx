@@ -15,7 +15,7 @@ export default function Home() {
       <div className="w-[390px] h-[1380px] mt-6 flex justify-center items-center bg-red-500 m-auto">
         <Elegirnos />
       </div>
-        <div className="w-[390px] h-[1380px] mt-6 flex justify-center items-center bg-lime-500 m-auto">
+        <div className="w-[390px] h-[512px] mt-6 flex justify-center items-center bg-Background-Default m-auto">
         <Resenia/>
       </div>
         <div className="w-[390px] h-[600px] mt-6 flex justify-center items-center bg-Background-Default m-auto">
