@@ -2,10 +2,10 @@ import Image from 'next/image';
 const Resenia = () => {
 
   return (
-    <div className="w-full h-[420px] mt-4">
+    <div className="w-full h-[400px] mt-4">
       <p className="mt-4 text-center text-title1 text-primary-600">Clientes Satisfechos</p>
       <div className='space-y-4'>
-        <div className="flex w-full h-[96px] p-2 space-x-4">
+        <div className="flex w-full h-[96px] p-2 space-x-4 shadow-md">
           <Image
             src="/Nora.png"
             width={96}
@@ -21,7 +21,7 @@ const Resenia = () => {
           </div>
         </div>
 
-        <div className="flex w-full h-[96px] p-2 space-x-4 bg-Background-Lilac mt-auto">
+        <div className="flex w-full h-[96px] p-2 space-x-4 bg-Background-Lilac mt-auto shadow-md">
           <div className='flex flex-col'>
             <p className='text-center text-body'>
               “No pensé que contratar un seguro fuera tan fácil. Me acompañaron en cada paso.”
@@ -38,7 +38,7 @@ const Resenia = () => {
           />
         </div>
 
-        <div className="flex w-full h-[96px] p-2 space-x-4 drop-shadow-lg ">
+        <div className="flex w-full h-[96px] p-2 space-x-4 drop-shadow-lg shadow-md">
           <Image
             src="/Luis.png"
             width={96}
