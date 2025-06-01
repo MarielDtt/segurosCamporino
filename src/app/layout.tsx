@@ -7,9 +7,9 @@ import Footer from "@/components/footer";
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '700'], 
+  weight: ['400', '700'],
 });
-
+import { Toaster } from "@/components/ui/sonner"
 
 export const metadata: Metadata = {
   title: "Seguros Camporino",
@@ -27,6 +27,7 @@ export default function RootLayout({
 
         <Navbar />
         {children}
+        <Toaster position="top-center" />
         <Footer />
       </body>
 

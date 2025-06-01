@@ -3,6 +3,8 @@ import ValidateContact from "@/helpers/validateContact";
 import { Button } from "../button";
 import { useState } from "react";
 import { IContact } from "./interfaceContact";
+import emailjs from '@emailjs/browser';
+import { toast } from 'sonner';
 
 
 
@@ -40,20 +42,54 @@ const Form = () => {
   }
   const handleOnSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (isFormInvalid) return;
 
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: ""
-    });
+    try {
+      await emailjs.send(
+        'service_2lo2qt8',
+        'template_lxreicq',
+         formData as unknown as Record<string, unknown>,
+        'wgZGVEu3gI1xnB0Qu'
+      );
+      toast.success('¡Mensaje enviado con éxito!', {
+        style: {
+          background: '#8FCB9B ',
+          color: '#f3f0f9',
+          border: '2px solid #5EA877',
+          fontFamily: 'var(--font-poppins)',
+          textAlign: 'center',
+          minWidth: '200px',
+        },
+      });
 
-    setTouchInput({
-      name: false,
-      email: false,
-      subject: false,
-      message: false
-    });
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+
+      setTouchInput({
+        name: false,
+        email: false,
+        subject: false,
+        message: false
+      });
+    }
+
+    catch (error) {
+      toast.error('Mensaje No Enviado. Intente Nuevamente.', {
+        style: {
+          background: '#F4A3A3',
+          color: '#f3f0f9',
+          border: '2px solid #D87373',
+          fontFamily: 'var(--font-poppins)',
+          textAlign: 'center',
+        },
+      });
+    }
+
+
   }
 
   const handleBlur = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
