@@ -7,6 +7,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+::-webkit-scrollbar { display: none; }
+* { scrollbar-width: none; }
+
 @layer components {
   .display1 {
     @apply text-display1 font-poppins;

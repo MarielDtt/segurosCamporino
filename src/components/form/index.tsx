@@ -46,7 +46,7 @@ const Form = () => {
 
     try {
       await emailjs.send(
-        'service_2lo2qt8',
+        'service_yf7hsuh',
         'template_lxreicq',
          formData as unknown as Record<string, unknown>,
         'wgZGVEu3gI1xnB0Qu'
