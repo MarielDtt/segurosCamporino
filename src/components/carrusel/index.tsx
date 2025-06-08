@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 type ImagenCarrusel = {
   id: number;
@@ -16,12 +16,10 @@ const imagenes: ImagenCarrusel[] = [
 
 const Carrusel = () => {
 
-  const [currentIndex, setCurrentIndex] = useState<number>(0)
-  const imagenActual = imagenes[currentIndex];
-
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const slideWidth = 380;
 
   useEffect(() => {
-
     const timer = setTimeout(() => {
       setCurrentIndex(prev => {
         if (prev + 1 >= imagenes.length) {
@@ -31,24 +29,30 @@ const Carrusel = () => {
         }
       });
     }, 2000);
-     return () => clearTimeout(timer);
+    return () => clearTimeout(timer);
   }, [currentIndex]);
 
   return (
     <>
-      <div className="relative flex items-center">
+      <div className="relative flex items-center overflow-hidden">
         <div
-
-          className="w-full h-full overflow-x-hidden whitespace-nowrap"
+          className='flex gap-8'
+          style={{
+            width: `${slideWidth * imagenes.length}px`,
+            transform: `translateX(-${currentIndex * slideWidth}px)`,
+            transition: 'transform 0.5s ease'
+          }}
         >
-          <Image
-            src={imagenActual.img}
-            alt={`logo ${imagenActual.id}`}
-            width={340}
-            height={285}
-            className="inline-block m-3"
-          />
-
+          {imagenes.map((item) => (
+            <Image
+              key={item.id}
+              src={item.img}
+              alt={`logo ${item.id}`}
+              width={364}
+              height={285}
+              className="block"
+            />
+          ))}
         </div>
       </div>
     </>
