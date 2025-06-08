@@ -6,7 +6,7 @@ import ScrollableIcon from "@/components/scrollableIcon";
 export default function Home() {
   return (
     <div>
-      <div className="w-[390px] h-[336px] p-24 flex justify-center items-center bg-yellow-200 mt-6 m-auto">
+      <div className="w-[390px] h-[336px] p-6 flex justify-center items-center bg-Background-Default mt-6 m-auto">
         <Carrusel />
       </div>
       <div className="w-[390px] h-[76px] mt-6 flex overflow-hidden justify-center items-center m-auto ">
