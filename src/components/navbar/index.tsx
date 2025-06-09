@@ -1,7 +1,7 @@
 
 "use client"
 import Image from 'next/image';
-import MenuSandwich from './MenuSandwich';
+import { MenuCustomAnimation } from './MenuCustomAnimation';
 
 const Navbar = () => {
 
@@ -9,7 +9,7 @@ const Navbar = () => {
 
         <nav className="flex w-full bg-primary-600 h-16 px-4 py-2 justify-between items-center lg:h-24 lg:px-16 lg:py-4 ">
          <div>
-            <MenuSandwich/>
+            <MenuCustomAnimation/>
          </div>
             <div className="">
                 <Image

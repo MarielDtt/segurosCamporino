@@ -1,0 +1,60 @@
+import {
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
+} from "@material-tailwind/react";
+import MenuSandwich from "./MenuSandwich";
+import { useState } from "react";
+import Image from 'next/image';
+
+export function MenuCustomAnimation() {
+  const [isOpen, setIsOpen] = useState(false);
+
+
+  return (
+    <Menu
+      animate={{
+        mount: { y: 0 },
+        unmount: { y: 25 },
+      }}
+      open={isOpen}
+      handler={setIsOpen}
+    >
+      <MenuHandler>
+        <MenuSandwich isOpen={isOpen} toggleMenu={() => setIsOpen(!isOpen)} />
+      </MenuHandler>
+
+      {/* @ts-ignore */}
+      <MenuList className=" backdrop-blur-md mt-12 ml-4 w-[280px] h-[405px] bg-[rgba(243,240,249,0.9)] rounded-2xl border-4 border-secondary-800">
+        <Image
+          src="/Logo_C.png"
+          width={40}
+          height={40}
+          alt="Logo Simple Seguros Camporino"
+          className=" mt-4 m-auto"
+        />
+          <hr className="border border-secondary-800 w-[255px] h-[4px] my-4 m-auto bg-secondary-800" />
+
+          {/* @ts-ignore */}
+          <MenuItem className="!text-primary-600 text-title3"> ¿Por qué elegirnos? </MenuItem>
+
+          <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
+
+          {/* @ts-ignore */}
+          <MenuItem className="!text-primary-600 text-title3"> Planes y Cobertura </MenuItem>
+
+          <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
+
+          {/* @ts-ignore */}
+          <MenuItem className="!text-primary-600 text-title3"> Preguntas Frecuentes </MenuItem>
+
+          <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
+
+          {/* @ts-ignore */}
+          <MenuItem className="!text-primary-600 text-title3"> Contacto </MenuItem>
+     
+      </MenuList>
+    </Menu>
+  );
+}

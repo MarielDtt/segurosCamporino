@@ -1,13 +1,13 @@
 
 import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
 
-const MenuSandwich = () => {
-    const [isOpen, setIsOpen] = useState(false)
+type MenuSandwichProps = {
+  isOpen: boolean;
+  toggleMenu: () => void;
+};
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    }
+const MenuSandwich = ({ isOpen, toggleMenu }: MenuSandwichProps) => {
+   
     return (
         <>
             {isOpen ?
