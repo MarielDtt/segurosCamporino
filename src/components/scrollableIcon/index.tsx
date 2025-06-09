@@ -20,7 +20,7 @@ const icons: icons[] = [
 const ScrollableIcon = () => {
 
   return (
-    <div className="w-[390px] flex justify-between items-center h-[76px] ">
+    <div className="w-[390px] flex justify-between items-center h-[76px]" id="planes">
       <div className='my-auto pr-2'>
         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 19 22" fill="none">
           <path d="M0.145873 10.9177L18.2709 0.74497L18.0182 21.528L0.145873 10.9177Z" fill="#3A2C83" />

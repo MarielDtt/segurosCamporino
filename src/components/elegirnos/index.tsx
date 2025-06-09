@@ -2,7 +2,7 @@ import Image from 'next/image';
 const Elegirnos = () => {
 
   return (
-    <div className="w-full h-[1876px] mt-4">
+    <div className="w-full h-[1876px] mt-4" id="porque-elegirnos">
       <p className="text-center text-title1 text-primary-600">¿POR QUE ELEGIRNOS?</p>
       <div className='mt-4 space-y-4'>
         <div className="flex flex-col space-y-4 pt-4 shadow-lg p-4 rounded-xl items-center bg-Background-Default">

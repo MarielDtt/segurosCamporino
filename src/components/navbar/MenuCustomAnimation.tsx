@@ -34,26 +34,32 @@ export function MenuCustomAnimation() {
           alt="Logo Simple Seguros Camporino"
           className=" mt-4 m-auto"
         />
-          <hr className="border border-secondary-800 w-[255px] h-[4px] my-4 m-auto bg-secondary-800" />
+        <hr className="border border-secondary-800 w-[255px] h-[4px] my-4 m-auto bg-secondary-800" />
 
-          {/* @ts-ignore */}
-          <MenuItem className="!text-primary-600 text-title3"> ¿Por qué elegirnos? </MenuItem>
+        {/* @ts-ignore */}
+        <MenuItem className="!text-primary-600 text-title3">
+          <a href="#porque-elegirnos" onClick={() => setIsOpen(false)}>¿Por qué elegirnos?</a>
+        </MenuItem>
 
-          <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
+        <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
 
-          {/* @ts-ignore */}
-          <MenuItem className="!text-primary-600 text-title3"> Planes y Cobertura </MenuItem>
+        {/* @ts-ignore */}
+        <MenuItem className="!text-primary-600 text-title3">
+          <a href="#planes" onClick={() => setIsOpen(false)}>Planes y Cobertura</a>
+        </MenuItem>
 
-          <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
+        <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
 
-          {/* @ts-ignore */}
-          <MenuItem className="!text-primary-600 text-title3"> Preguntas Frecuentes </MenuItem>
+        {/* @ts-ignore */}
+        <MenuItem className="!text-primary-600 text-title3"> Preguntas Frecuentes </MenuItem>
 
-          <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
+        <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
 
-          {/* @ts-ignore */}
-          <MenuItem className="!text-primary-600 text-title3"> Contacto </MenuItem>
-     
+        {/* @ts-ignore */}
+        <MenuItem className="!text-primary-600 text-title3">
+          <a href="#contacto" onClick={() => setIsOpen(false)}>Contacto</a>
+        </MenuItem>
+
       </MenuList>
     </Menu>
   );
