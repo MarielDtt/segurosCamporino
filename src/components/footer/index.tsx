@@ -1,8 +1,7 @@
 "use client"
 import Image from 'next/image';
 import { Instagram, Facebook } from 'lucide-react';
-
-
+import Link from 'next/link';
 
 const Footer = () => {
 
@@ -30,12 +29,12 @@ const Footer = () => {
                     <p className='text-Background-Lilac text-signal2'>© 2025 Camporino Seguros · Todos los Derechos Reservados  </p>
                 </div>
                 <div className='flex mt-2'>
-                    <a>
+                    <Link href="/terminos-y-condiciones">
                         <p className='text-Background-Lilac text-signal2'>Términos y condiciones--- </p>
-                    </a>
-                    <a>
+                    </Link>
+                   <Link href="/politicas-de-privacidad">
                         <p className='text-Background-Lilac text-signal2'> Política de privacidad</p>
-                    </a>
+                     </Link>
                 </div>
                 <div className='mt-2'>
                     <p className='text-Background-Lilac text-signal3'>Diseñado por @MarielDtt</p>
