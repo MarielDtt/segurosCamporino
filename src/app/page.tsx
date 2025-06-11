@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     const splash = setTimeout(() => {
       setSplashActive(true)
-    }, 1500);
+    }, 3000);
     return () => clearTimeout(splash);
   }, []);
 
