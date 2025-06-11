@@ -19,10 +19,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <AnimatePresence>
       {
-      
-        !splashActive ? (<SplashScreen />) :
+        !splashActive ? (<SplashScreen key="splash" />) :
           (<>
             <div className="w-[390px] h-[336px] p-6 flex justify-center items-center bg-Background-Default mt-6 m-auto">
               <Carrusel />
@@ -54,7 +53,7 @@ export default function Home() {
             </a>
           </>)
       }
-    </div>
+    </AnimatePresence>
 
   );
 }

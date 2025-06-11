@@ -11,7 +11,7 @@ const Navbar = () => {
          <div>
             <MenuCustomAnimation/>
          </div>
-            <div className="">
+            <div>
                 <Image
                     src="/Logo_C.png"
                     width={28}

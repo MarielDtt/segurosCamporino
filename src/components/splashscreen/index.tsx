@@ -12,7 +12,8 @@ const SplashScreen = () => {
                     delay: 0.5,
                     ease: "easeInOut"
                 }}
-                className="flex justify-center">
+                className="flex justify-center"
+                exit={{ opacity: 0, scale: 0.5 }}>
             <Image
                 src="/LogoCompleto.png"
                 width={433}
