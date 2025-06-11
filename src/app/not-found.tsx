@@ -16,7 +16,7 @@ function NotFound() {
                     src="/auto.png"
                     width={340}
                     height={340}
-                    alt="Logo Simple Seguros Camporino"
+                    alt="Auto"
                 />
             </div>
             <p className="text-body italic m-8 text-primary-600">Parece que tomaste un desvío. Volvamos a la ruta segura o hablá con un asesor para encontrar lo que necesitás.</p>
