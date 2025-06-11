@@ -7,6 +7,7 @@ import ScrollableIcon from "@/components/scrollableIcon";
 import SplashScreen from "@/components/splashscreen";
 import Image from 'next/image';
 import { useState, useEffect } from "react";
+import { AnimatePresence  } from "motion/react"
 export default function Home() {
   const [splashActive, setSplashActive] = useState<boolean>(false);
 
@@ -20,6 +21,7 @@ export default function Home() {
   return (
     <div>
       {
+      
         !splashActive ? (<SplashScreen />) :
           (<>
             <div className="w-[390px] h-[336px] p-6 flex justify-center items-center bg-Background-Default mt-6 m-auto">

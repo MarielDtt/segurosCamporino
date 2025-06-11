@@ -7,10 +7,11 @@ import {
 import MenuSandwich from "./MenuSandwich";
 import { useState } from "react";
 import Image from 'next/image';
+import { useRouter } from "next/navigation";
 
 export function MenuCustomAnimation() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const router = useRouter();
 
   return (
     <Menu
@@ -51,7 +52,8 @@ export function MenuCustomAnimation() {
         <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
 
         {/* @ts-ignore */}
-        <MenuItem className="!text-primary-600 text-title3"> Preguntas Frecuentes </MenuItem>
+        <MenuItem className="!text-primary-600 text-title3">
+          <a onClick={() => router.push('/preguntas-frecuentes')}>Preguntas Frecuentes</a>  </MenuItem>
 
         <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
 
