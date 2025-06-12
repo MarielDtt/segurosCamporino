@@ -105,15 +105,15 @@ const Form = () => {
   const isFormInvalid = Object.values(errors).some(error => error !== "") || Object.values(formData).some(value => value.trim() === "");
 
   return (
-    <div className="w-full h-[528px] mt-4" id="contacto">
-      <p className="text-center text-title1 text-primary-600 mt-4">Dejanos tu Consulta</p>
+    <div className="w-full h-[528px] mt-4 lg:w-[500px]" id="contacto">
+      <p className="text-center text-title1 text-primary-600 mt-4 lg:text-display3 m-auto">Dejanos tu Consulta</p>
 
-      <form className="w-[344px] h-[494px] flex flex-col items-center m-auto space-y-4 pt-4" onSubmit={handleOnSubmit}>
+      <form className="w-[344px] h-[494px] flex flex-col items-center m-auto space-y-4 pt-4 lg:w-[500px]" onSubmit={handleOnSubmit}>
         <div className="flex flex-col space-y-2">
-          <label className="text-body text-primary-500 mt-2" > Nombre y Apellido:</label>
+          <label className="text-body text-primary-500 mt-2 lg:text-subtitle2" > Nombre y Apellido:</label>
           <input
             id="name"
-            className="w-[314px] h-8 rounded-md border-primary-400 border bg-Background-Lilac pl-2"
+            className="w-[314px] h-8 rounded-md border-primary-400 border bg-Background-Lilac pl-2 lg:w-[500px]"
             type="text"
             name="name"
             value={formData.name}
@@ -126,7 +126,7 @@ const Form = () => {
         <div className="flex flex-col space-y-2">
           <label className="text-body text-primary-500" > Email:</label>
           <input
-            className="w-[314px] h-8 rounded-md border-primary-400 border bg-Background-Lilac pl-2"
+            className="w-[314px] h-8 rounded-md border-primary-400 border bg-Background-Lilac pl-2 lg:w-[500px]"
             type="email"
             name="email"
             id="email"
@@ -139,7 +139,7 @@ const Form = () => {
         <div className="flex flex-col space-y-2">
           <label className="text-body text-primary-500" > Asunto:</label>
           <input
-            className="w-[314px] h-8 rounded-md border-primary-400 border bg-Background-Lilac pl-2"
+            className="w-[314px] h-8 rounded-md border-primary-400 border bg-Background-Lilac pl-2 lg:w-[500px]"
             type="text"
             name="subject"
             id="subject"
@@ -152,7 +152,7 @@ const Form = () => {
         <div className="flex flex-col space-y-2">
           <label className="text-body text-primary-500" > Mensaje:</label>
           <textarea
-            className="w-[314px] h-[96px] rounded-md border-primary-400 border bg-Background-Lilac pl-2"
+            className="w-[314px] h-[96px] rounded-md border-primary-400 border bg-Background-Lilac pl-2 lg:w-[500px]"
             name="message"
             id="message"
             value={formData.message}
