@@ -124,7 +124,7 @@ const Form = () => {
 
         </div>
         <div className="flex flex-col space-y-2">
-          <label className="text-body text-primary-500" > Email:</label>
+          <label className="text-body text-primary-500 lg:text-subtitle2" > Email:</label>
           <input
             className="w-[314px] h-8 rounded-md border-primary-400 border bg-Background-Lilac pl-2 lg:w-[500px]"
             type="email"
@@ -137,7 +137,7 @@ const Form = () => {
           {touchInput.email && <p className="text-signal3 text-red-600">{errors.email}</p>}
         </div>
         <div className="flex flex-col space-y-2">
-          <label className="text-body text-primary-500" > Asunto:</label>
+          <label className="text-body text-primary-500 lg:text-subtitle2" > Asunto:</label>
           <input
             className="w-[314px] h-8 rounded-md border-primary-400 border bg-Background-Lilac pl-2 lg:w-[500px]"
             type="text"
@@ -150,7 +150,7 @@ const Form = () => {
           {touchInput.subject && <p className="text-signal3 text-red-600">{errors.subject}</p>}
         </div>
         <div className="flex flex-col space-y-2">
-          <label className="text-body text-primary-500" > Mensaje:</label>
+          <label className="text-body text-primary-500 lg:text-subtitle2" > Mensaje:</label>
           <textarea
             className="w-[314px] h-[96px] rounded-md border-primary-400 border bg-Background-Lilac pl-2 lg:w-[500px]"
             name="message"
