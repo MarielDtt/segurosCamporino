@@ -15,7 +15,7 @@ const Resenia = () => {
           />
           <div className='flex flex-col'>
             <p className='text-center text-body'>
-              “Me explicaron todo con paciencia y claridad. Sentí que podía confiar desde el primer momento.”
+              “PROBANDO”
             </p>
             <p className='text-caption text-secondary-800 text-center'>-Nora, Villa Urquiza</p>
           </div>
