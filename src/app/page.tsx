@@ -22,20 +22,20 @@ export default function Home() {
     <AnimatePresence>
       {
         !splashActive ? (<SplashScreen key="splash" />) :
-          (<>
-            <div className="w-[390px] h-[336px] p-6 flex justify-center items-center bg-Background-Default mt-6 m-auto">
+          (<div className="w-[390px] h-auto lg:w-[1360px] space-y-6 lg:space-y-10 m-auto">
+            <div className="w-[390px] h-[336px] p-6 flex justify-center items-center bg-red-400  m-auto">
               <Carrusel />
             </div>
-            <div className="w-[390px] h-[76px] mt-6 flex overflow-hidden justify-center items-center m-auto ">
+            <div className="w-[390px] h-[76px]  flex overflow-hidden justify-center items-center bg-blue-200 m-auto ">
               <ScrollableIcon />
             </div>
-            <div className="w-[390px] h-[1876x] mt-6 flex justify-center items-center bg-Background-Default m-auto">
+            <div className="w-[390px] h-[1376x]  flex justify-center items-center bg-yellow-500 m-auto">
               <Elegirnos />
             </div>
-            <div className="w-[390px] h-[400px] mt-6 flex justify-center items-center bg-Background-Default-400 m-auto">
+            <div className="w-[390px] h-auto lg:w-[880px] flex justify-center items-center bg-Background-Default m-auto">
               <Resenia />
             </div>
-            <div className="w-[390px] h-[528px] mt-6 flex justify-center items-center bg-Background-Default m-auto">
+            <div className="w-[390px] h-auto lg:w-[556px] flex justify-center items-center bg-Background-Default m-auto">
               <Form />
             </div>
             <a
@@ -51,7 +51,7 @@ export default function Home() {
                 height={32}
               />
             </a>
-          </>)
+          </div>)
       }
     </AnimatePresence>
 

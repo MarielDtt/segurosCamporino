@@ -36,7 +36,7 @@ const Carrusel = () => {
     <>
       <div className="relative flex items-center overflow-hidden">
         <div
-          className='flex gap-8'
+          className='flex gap-10'
           style={{
             width: `${slideWidth * imagenes.length}px`,
             transform: `translateX(-${currentIndex * slideWidth}px)`,
