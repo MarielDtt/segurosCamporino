@@ -29,7 +29,7 @@ export default function Home() {
             <div className="w-[390px] h-[76px]  flex overflow-hidden justify-center items-center bg-blue-200 m-auto ">
               <ScrollableIcon />
             </div>
-            <div className="w-[390px] h-[1376x]  flex justify-center items-center bg-yellow-500 m-auto">
+            <div className="w-[390px] h-auto lg:w-[832px] flex justify-center items-center bg-Background-Default m-auto">
               <Elegirnos />
             </div>
             <div className="w-[390px] h-auto lg:w-[880px] flex justify-center items-center bg-Background-Default m-auto">

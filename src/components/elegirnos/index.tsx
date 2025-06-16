@@ -2,10 +2,10 @@ import Image from 'next/image';
 const Elegirnos = () => {
 
   return (
-    <div className="w-full h-[1876px] mt-4" id="porque-elegirnos">
-      <p className="text-center text-title1 text-primary-600">¿POR QUE ELEGIRNOS?</p>
-      <div className='mt-4 space-y-4'>
-        <div className="flex flex-col space-y-4 pt-4 shadow-lg p-4 rounded-xl items-center bg-Background-Default">
+    <div className="w-full h-auto p-4 lg:p-6" id="porque-elegirnos">
+      <p className="text-center text-title1 lg:text-display3 text-primary-600">¿POR QUE ELEGIRNOS?</p>
+      <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6 lg:px-4 lg:mx-auto lg:justify-center">
+        <div className="flex flex-col space-y-4 pt-4  shadow-lg p-4 rounded-xl items-center bg-Background-Default">
           <Image
             src="/Atencion.png"
             width={296}
@@ -29,7 +29,7 @@ const Elegirnos = () => {
           <p className='text-secondary-900 text-body text-center'>Elegí una compañía que respalda cada decisión con compromiso y seriedad.</p>
         </div>
 
-        <div className="flex flex-col space-y-4 pt-4 shadow-lg p-4 rounded-xl items-center bg-Background-Default">
+        <div className="flex flex-col space-y-4 pt-4  shadow-lg p-4 rounded-xl items-center bg-Background-Default">
           <Image
             src="/Planes.png"
             width={296}
@@ -40,8 +40,8 @@ const Elegirnos = () => {
           <p className='text-primary-600 text-title2 text-center'>Planes Accesibles</p>
           <p className='text-secondary-900 text-body text-center'>Elegí la protección que necesitás, sin gastar de más.</p>
         </div>
-        
-        <div className="flex flex-col space-y-4 pt-4 shadow-lg p-4 rounded-xl items-center bg-Background-Default">
+
+        <div className="flex flex-col space-y-4 pt-4  shadow-lg p-4 rounded-xl items-center bg-Background-Default">
           <Image
             src="/Online.png"
             width={296}
