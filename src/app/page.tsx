@@ -26,7 +26,7 @@ export default function Home() {
             <div className="w-[390px] h-[336px] p-6 flex justify-center items-center bg-red-400  m-auto">
               <Carrusel />
             </div>
-            <div className="w-[390px] h-[76px]  flex overflow-hidden justify-center items-center bg-blue-200 m-auto ">
+            <div className="w-[390px] lg:w-[872px] h-auto flex overflow-hidden justify-center items-center bg-Background-Default m-auto ">
               <ScrollableIcon />
             </div>
             <div className="w-[390px] h-auto lg:w-[832px] flex justify-center items-center bg-Background-Default m-auto">

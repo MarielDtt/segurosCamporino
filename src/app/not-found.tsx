@@ -9,8 +9,8 @@ function NotFound() {
 
 
     return (
-        <div className="bg-Background-Default h-screen fixed inset-0 z-50">
-            <h1 className="text-title1 text-center m-auto text-primary-600 mt-8">Esta página no está asegurada 😅</h1>
+        <div className="bg-Background-Default h-screen fixed inset-0 z-50 m-auto">
+            <h1 className="text-title1 text-center m-auto text-primary-600 mt-8 lg:text-display3">Esta página no está asegurada 😅</h1>
             <div className="flex justify-center m-auto">
                 <Image
                     src="/auto.png"
@@ -19,7 +19,7 @@ function NotFound() {
                     alt="Auto"
                 />
             </div>
-            <p className="text-body italic m-8 text-primary-600">Parece que tomaste un desvío. Volvamos a la ruta segura o hablá con un asesor para encontrar lo que necesitás.</p>
+            <p className="text-body italic m-8 text-primary-600 text-center lg:text-subtitle2">Parece que tomaste un desvío. Volvamos a la ruta segura o hablá con un asesor para encontrar lo que necesitás.</p>
             <div>
                 <div>
                     <Button text="INICIO" onClick={() => router.push('/')} />

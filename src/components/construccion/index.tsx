@@ -7,8 +7,8 @@ function Construccion() {
     const router = useRouter();
 
     return (
-        <div className="bg-Background-Default h-screen fixed inset-0 z-50">
-            <h1 className="text-title1 text-center m-auto text-primary-600 mt-8">Estamos trabajando para asegurar tu camino 😅</h1>
+        <div className="bg-Background-Default h-screen fixed inset-0 z-50 m-auto">
+            <h1 className="text-title1 text-center m-auto text-primary-600 mt-8 lg:text-display3">Estamos trabajando para asegurar tu camino 😅</h1>
             <div className="flex justify-center m-auto">
                 <Image
                     src="/Construccion.png"
@@ -17,7 +17,7 @@ function Construccion() {
                     alt="Auto"
                 />
             </div>
-            <p className="text-body italic m-8 text-primary-600">Muy pronto vas a poder recorrer esta sección sin desvíos. Gracias por tu paciencia.</p>
+            <p className="text-body italic m-8 text-primary-600 text-center lg:text-subtitle2">Muy pronto vas a poder recorrer esta sección sin desvíos. Gracias por tu paciencia.</p>
             <div>
                 <div>
                     <Button text="INICIO" onClick={() => router.push('/')} />
