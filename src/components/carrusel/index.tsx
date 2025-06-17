@@ -34,7 +34,7 @@ const Carrusel = () => {
 
   return (
     <>
-      <div className="relative flex items-center overflow-hidden">
+      <div className="relative flex items-center overflow-hidden lg:hidden">
         <div
           className='flex gap-10'
           style={{
@@ -55,6 +55,34 @@ const Carrusel = () => {
           ))}
         </div>
       </div>
+
+      <div className="relative hidden lg:flex items-center overflow-hidden">
+        <div
+          className="flex gap-12"
+          style={{
+            width: `${800 * imagenes.length}px`,
+            transform: `translateX(-${currentIndex * 800}px)`,
+            transition: 'transform 0.5s ease'
+          }}
+        >
+          {imagenes.map((item) => (
+            <div
+              key={item.id}
+              className="relative w-[800px] h-[600px]"
+            >
+              <Image
+                src={item.img}
+                alt={`logo ${item.id}`}
+                fill
+                className="object-cover rounded-xl"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+
     </>
   );
 }

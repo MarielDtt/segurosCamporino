@@ -23,7 +23,7 @@ export default function Home() {
       {
         !splashActive ? (<SplashScreen key="splash" />) :
           (<div className="w-[390px] h-auto lg:w-[1360px] space-y-6 lg:space-y-10 m-auto">
-            <div className="w-[390px] h-[336px] p-6 flex justify-center items-center bg-red-400  m-auto">
+            <div className="w-[390px] h-auto lg:w-[860px] p-6 flex justify-center items-center bg-Background-Default m-auto">
               <Carrusel />
             </div>
             <div className="w-[390px] lg:w-[872px] h-auto flex overflow-hidden justify-center items-center bg-Background-Default m-auto ">
