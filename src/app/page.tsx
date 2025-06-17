@@ -39,7 +39,7 @@ export default function Home() {
               <Form />
             </div>
             <a
-              href="https://wa.me/5491166603916?text=Hola%2C%20quiero%20cotizar%20un%20seguro"
+              href="https://wa.me/5491161076870?text=Hola%2C%20quiero%20cotizar%20un%20seguro"
               target="_blank"
               rel="noopener noreferrer"
               className="fixed bottom-6 right-6 z-50 bg-green-500 p-3 rounded-full shadow-lg hover:scale-105 transition-transform"
