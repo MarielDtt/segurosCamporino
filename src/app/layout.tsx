@@ -12,9 +12,32 @@ const poppins = Poppins({
 import { Toaster } from "@/components/ui/sonner"
 
 export const metadata: Metadata = {
-  title: "Seguros Camporino",
-  description: "",
+  title: "Seguros Camporino - Tu tranquilidad, nuestra prioridad",
+  description: "Cotizá online tu seguro de auto, hogar, salud y más. Atención personalizada, sin trámites complicados.",
+   keywords: [
+    "seguros Camporino",
+    "seguros online Argentina",
+    "seguros para autos",
+    "cotizar seguro",
+    "seguros baratos",
+  ],
+  openGraph: {
+  title: "Seguros Camporino - Tu tranquilidad, nuestra prioridad",
+  description: "Cotizá online tu seguro de auto, hogar, salud y más. Atención personalizada, sin trámites complicados.",
+  url: "https://seguroscamporino.com",
+  siteName: "Seguros Camporino",
+  images: [
+    {
+      url: "/og-image.png",
+      width: 1200,
+      height: 630,
+      alt: "Seguros Camporino",
+    },
+  ],
+  type: "website",
+},
 };
+
 
 export default function RootLayout({
   children,
@@ -22,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={poppins.className}>
 
         <Navbar />
