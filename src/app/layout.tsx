@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
   title: "Seguros Camporino - Tu tranquilidad, nuestra prioridad",
   description: "Cotizá online tu seguro de auto, hogar, salud y más. Atención personalizada, sin trámites complicados.",
-  url: "https://seguroscamporino.com",
+  url: "https://seguroscamporino.com.ar",
   siteName: "Seguros Camporino",
   images: [
     {
@@ -36,6 +36,9 @@ export const metadata: Metadata = {
   ],
   type: "website",
 },
+ icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 
