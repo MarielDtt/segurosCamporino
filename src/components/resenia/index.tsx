@@ -8,7 +8,7 @@ const Resenia = () => {
         <div className="flex w-full lg:w-[832px] lg:h-[240px] p-2 lg:p-4 lg:m-auto space-x-8 drop-shadow-lg shadow-md items-center">
           <div className="relative w-[240px] h-[96px] lg:w-[240px] lg:h-[160px]" role="img" aria-label="Retrato de Nora, cliente satisfecha de Villa Urquiza">
             <Image
-              src="/Nora.png"
+              src="/Nora.webp"
               fill
               className="rounded-full"
               alt=""
@@ -32,7 +32,7 @@ const Resenia = () => {
           </div>
           <div className="relative w-[240px] h-[104px] lg:w-[240px] lg:h-[160px]" role="img" aria-label="Retrato de Jorge, cliente satisfecho de San Martín">
             <Image
-              src="/Jorge.png"
+              src="/Jorge.webp"
               fill
               className="rounded-full"
               alt=""
@@ -43,7 +43,7 @@ const Resenia = () => {
         <div className="flex w-full lg:w-[832px] lg:h-[240px] p-2 lg:p-4 lg:m-auto space-x-8 drop-shadow-lg shadow-md items-center">
           <div className="relative w-[240px] h-[104px] lg:w-[240px] lg:h-[160px]" role="img" aria-label="Retrato de Luis, cliente satisfecho de Villa Urquiza">
             <Image
-              src="/Luis.png"
+              src="/Luis.webp"
               fill
               className="rounded-full"
               alt=""

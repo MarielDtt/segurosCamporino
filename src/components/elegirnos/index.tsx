@@ -7,7 +7,7 @@ const Elegirnos = () => {
       <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6 lg:px-4 lg:mx-auto lg:justify-center">
         <div className="flex flex-col space-y-4 pt-4  shadow-lg p-4 rounded-xl items-center bg-Background-Default">
           <Image
-            src="/Atencion.png"
+            src="/Atencion.webp"
             width={296}
             height={160}
             className="object-cover rounded-xl shadow-md"
@@ -19,7 +19,7 @@ const Elegirnos = () => {
 
         <div className="flex flex-col space-y-4 pt-4 shadow-lg p-4 rounded-xl items-center bg-Background-Default">
           <Image
-            src="/Confianza.png"
+            src="/Confianza.webp"
             width={296}
             height={160}
             className="object-cover rounded-xl shadow-md"
@@ -31,7 +31,7 @@ const Elegirnos = () => {
 
         <div className="flex flex-col space-y-4 pt-4  shadow-lg p-4 rounded-xl items-center bg-Background-Default">
           <Image
-            src="/Planes.png"
+            src="/Planes.webp"
             width={296}
             height={160}
             className="object-cover rounded-xl shadow-md"
@@ -43,7 +43,7 @@ const Elegirnos = () => {
 
         <div className="flex flex-col space-y-4 pt-4  shadow-lg p-4 rounded-xl items-center bg-Background-Default">
           <Image
-            src="/Online.png"
+            src="/Online.webp"
             width={296}
             height={160}
             className="object-cover rounded-xl shadow-md"
