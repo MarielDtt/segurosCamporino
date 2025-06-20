@@ -54,9 +54,10 @@ const config: Config = {
         signal3: ["8px", { lineHeight: "8px", letterSpacing: "0.5px", fontWeight: "400" }],
       },
       screens: {
-        sm: "393px",
+        sm: "640px",
         md: "768px",
         lg: "1024px",
+        xl: "1280px",
       },
       borderRadius: {
         lg: "12px",

@@ -12,9 +12,10 @@ const poppins = Poppins({
 import { Toaster } from "@/components/ui/sonner"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://seguroscamporino.com.ar"),
   title: "Seguros Camporino - Tu tranquilidad, nuestra prioridad",
   description: "Cotizá online tu seguro de auto, hogar, salud y más. Atención personalizada, sin trámites complicados.",
-   keywords: [
+  keywords: [
     "seguros Camporino",
     "seguros online Argentina",
     "seguros para autos",
@@ -22,21 +23,21 @@ export const metadata: Metadata = {
     "seguros baratos",
   ],
   openGraph: {
-  title: "Seguros Camporino - Tu tranquilidad, nuestra prioridad",
-  description: "Cotizá online tu seguro de auto, hogar, salud y más. Atención personalizada, sin trámites complicados.",
-  url: "https://seguroscamporino.com.ar",
-  siteName: "Seguros Camporino",
-  images: [
-    {
-      url: "/og-image.png",
-      width: 1200,
-      height: 630,
-      alt: "Seguros Camporino",
-    },
-  ],
-  type: "website",
-},
- icons: {
+    title: "Seguros Camporino - Tu tranquilidad, nuestra prioridad",
+    description: "Cotizá online tu seguro de auto, hogar, salud y más. Atención personalizada, sin trámites complicados.",
+    url: "https://seguroscamporino.com.ar",
+    siteName: "Seguros Camporino",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Seguros Camporino",
+      },
+    ],
+    type: "website",
+  },
+  icons: {
     icon: "/favicon.ico",
   },
 };

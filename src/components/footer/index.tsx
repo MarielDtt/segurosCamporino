@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import { Instagram, Facebook } from 'lucide-react';
+import { Instagram, Facebook, Mail } from 'lucide-react';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -28,7 +28,11 @@ const Footer = () => {
                                 <Instagram className="w-full h-full" color="#f3f0f9" />
                             </a>
                         </div>
-
+                         <div className="w-10 h-10 lg:w-12 lg:h-12 pr-4">
+                            <a href="mailto:seguroscamporino@hotmail.com?subject=Asunto del correo&body=Cuerpo del correo" target="_blank" rel="noopener noreferrer" className='pr-4'>
+                                <Mail  className="w-full h-full" color="#f3f0f9" />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <hr className="w-full border-t border-white my-1" />

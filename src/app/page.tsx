@@ -8,6 +8,7 @@ import SplashScreen from "@/components/splashscreen";
 import Image from 'next/image';
 import { useState, useEffect } from "react";
 import { AnimatePresence  } from "motion/react"
+
 export default function Home() {
   const [splashActive, setSplashActive] = useState<boolean>(false);
 
@@ -22,7 +23,23 @@ export default function Home() {
     <AnimatePresence>
       {
         !splashActive ? (<SplashScreen key="splash" />) :
-          (<div className="w-[390px] h-auto lg:w-[1360px] space-y-6 lg:space-y-10 m-auto">
+          (<div className="w-auto h-auto lg:w-auto space-y-6 lg:space-y-10 m-auto">
+            <div className="lg:hidden flex h-auto m-auto mt-6 px-6 justify-center items-center bg-primary-600">
+                <Image
+                src="/General_Mobile.png"
+                alt="Descripcion General de Seguros para Mobile"
+                width={350}
+                height={302}
+              />
+            </div>
+             <div className="hidden lg:flex w-full justify-center items-center bg-primary-600">
+                <Image
+                src="/GeneralCompleto.png"
+                alt="Descripcion General de Seguros para Mobile"
+                width={1200}
+                height={312}
+              />
+            </div>
             <div className="w-[390px] h-auto lg:w-[860px] p-6 flex justify-center items-center bg-Background-Default m-auto">
               <Carrusel />
             </div>
