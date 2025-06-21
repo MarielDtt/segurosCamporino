@@ -8,10 +8,10 @@ type ImagenCarrusel = {
 };
 
 const imagenes: ImagenCarrusel[] = [
-  { id: 1, img: "/Seguro_Automotor.jpg" },
-  { id: 2, img: "/Seguro_Hogar.jpg" },
-  { id: 3, img: "/Seguro_Motovehiculo.jpg" },
-  { id: 4, img: "/Seguro_Accidentes.jpg" },
+  { id: 1, img: "/Seguro_Automotor.webp" },
+  { id: 2, img: "/Seguro_Hogar.webp" },
+  { id: 3, img: "/Seguro_Motovehiculo.webp" },
+  { id: 4, img: "/Seguro_Accidentes.webp" },
 ];
 
 const Carrusel = () => {

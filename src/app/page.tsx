@@ -29,7 +29,7 @@ export default function Home() {
       {
         !splashActive ? (<SplashScreen key="splash" />) :
           (<div className="w-auto h-auto lg:w-auto space-y-6 lg:space-y-10 m-auto">
-            <div className="lg:hidden flex h-auto m-auto mt-6 px-6 justify-center items-center bg-primary-600">
+            <div className="lg:hidden flex h-[302px] m-auto mt-6 px-6 justify-center items-center bg-primary-600">
               <Image
                 src="/General_Mobile.webp"
                 alt="Descripcion General de Seguros para Mobile"
