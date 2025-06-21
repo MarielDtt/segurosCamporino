@@ -1,7 +1,6 @@
 'use client'
 import Carrusel from "@/components/carrusel";
 import Elegirnos from "@/components/elegirnos";
-import Resenia from "@/components/resenia";
 import ScrollableIcon from "@/components/scrollableIcon";
 import SplashScreen from "@/components/splashscreen";
 import Image from 'next/image';
@@ -13,6 +12,7 @@ import dynamic from 'next/dynamic'
 export default function Home() {
   const [splashActive, setSplashActive] = useState<boolean>(false);
 
+  const ComponentResenia = dynamic(() => import('../components/resenia'))
   const ComponentForm = dynamic(() => import('../components/form'))
   
   useEffect(() => {
@@ -53,7 +53,7 @@ export default function Home() {
               <Elegirnos />
             </div>
             <div className="w-[390px] h-auto lg:w-[880px] flex justify-center items-center bg-Background-Default m-auto">
-              <Resenia />
+              <ComponentResenia />
             </div>
             <div className="w-[390px] h-auto lg:w-[556px] flex justify-center items-center bg-Background-Default m-auto">
               <ComponentForm/>
