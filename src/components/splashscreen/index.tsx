@@ -15,7 +15,7 @@ const SplashScreen = () => {
                 className="flex justify-center"
                 exit={{ opacity: 0, scale: 0.5 }}>
             <Image
-                src="/LogoCompleto.png"
+                src="/LogoCompleto.webp"
                 width={433}
                 height={433}
                 alt="Logo Completo Seguros Camporino"

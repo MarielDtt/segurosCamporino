@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="flex w-full justify-between items-center mb-2">
                     <div className="relative w-10 h-10 lg:w-16 lg:h-16">
                         <Image
-                            src="/Logo_C.png"
+                            src="/Logo_C.webp"
                             alt="Logo Simple Seguros Camporino"
                             fill
                             className="object-contain"

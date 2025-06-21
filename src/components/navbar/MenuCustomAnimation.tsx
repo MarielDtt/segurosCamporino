@@ -29,7 +29,7 @@ export function MenuCustomAnimation() {
       {/* @ts-ignore */}
       <MenuList className=" backdrop-blur-md mt-12 ml-4 w-[280px] h-[405px] bg-[rgba(243,240,249,0.9)] rounded-2xl border-4 border-secondary-800">
         <Image
-          src="/Logo_C.png"
+          src="/Logo_C.webp"
           width={40}
           height={40}
           alt="Logo Simple Seguros Camporino"
