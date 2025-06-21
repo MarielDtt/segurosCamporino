@@ -15,7 +15,7 @@ const Navbar = () => {
 
             <div className="relative w-7 h-7 lg:w-14 lg:h-14">
                 <Image
-                    src="/Logo_C.png"
+                    src="/Logo_C.webp"
                     fill
                     alt="Logo Simple Seguros Camporino"
                 />
