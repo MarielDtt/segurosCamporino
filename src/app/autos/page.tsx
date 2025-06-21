@@ -1,6 +1,10 @@
 import Construccion from "@/components/construccion";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Seguro de Auto - Cotizá online con Seguros Camporino",
+  description: "Cotizá tu seguro automotor en minutos. Terceros, robo, granizo, responsabilidad civil y más. Atención personalizada sin trámites engorrosos.",
+};
 const Autos = () => {
 
     return (

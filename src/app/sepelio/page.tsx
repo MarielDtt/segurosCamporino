@@ -1,6 +1,11 @@
 import Construccion from "@/components/construccion";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Seguro de Sepelio - Tranquilidad para vos y tu familia | Seguros Camporino",
+  description: "Contratá un seguro de sepelio que cubra los gastos del servicio. Planes accesibles, atención personalizada y sin trámites complicados.",
+};
+
 const Sepelio = () => {
 
      return (

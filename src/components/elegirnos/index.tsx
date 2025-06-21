@@ -47,7 +47,7 @@ const Elegirnos = () => {
             width={296}
             height={160}
             className="object-cover rounded-xl shadow-md"
-            alt="Atencion Personalizada"
+            alt="Atencion 100% Online"
           />
           <p className='text-primary-600 text-title2 text-center'>Gestión 100% Online</p>
           <p className='text-secondary-900 text-body text-center'>Hacelo todo desde tu casa, sin papeles ni trámites complicados.</p>

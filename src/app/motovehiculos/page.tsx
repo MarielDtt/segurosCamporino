@@ -1,6 +1,11 @@
 import Construccion from "@/components/construccion";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Seguro para Motos - Cotizá en minutos | Seguros Camporino",
+  description: "Protegé tu moto con coberturas contra robo, accidentes y responsabilidad civil. Cotizá online de forma rápida y segura.",
+};
+
 const Motovehiculos = () => {
 
     return (

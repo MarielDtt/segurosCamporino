@@ -1,6 +1,10 @@
 import Construccion from "@/components/construccion";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Seguro de Hogar - Cotizá online con Seguros Camporino",
+  description: "Protegé tu casa y tus pertenencias con un seguro de hogar adaptado a vos. Cotizá online en minutos con atención personalizada.",
+};
 const Hogar = () => {
 
     return (

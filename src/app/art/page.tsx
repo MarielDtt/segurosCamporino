@@ -1,6 +1,10 @@
 import Construccion from "@/components/construccion";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Seguro ART - Cobertura para empleadores | Seguros Camporino",
+  description: "Contratá el seguro ART obligatorio para tus empleados. Cumplí con la ley y protegé a tu equipo frente a accidentes laborales.",
+};
 const Art = () => {
 
     return (

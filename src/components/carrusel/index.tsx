@@ -5,13 +5,14 @@ import { useEffect, useState } from "react";
 type ImagenCarrusel = {
   id: number;
   img: string;
+  alt: string
 };
 
 const imagenes: ImagenCarrusel[] = [
-  { id: 1, img: "/Seguro_Automotor.webp" },
-  { id: 2, img: "/Seguro_Hogar.webp" },
-  { id: 3, img: "/Seguro_Motovehiculo.webp" },
-  { id: 4, img: "/Seguro_Accidentes.webp" },
+  { id: 1, img: "/Seguro_Automotor.webp", alt: "Seguro de Automotor" },
+  { id: 2, img: "/Seguro_Hogar.webp", alt: "Seguro de Hogar" },
+  { id: 3, img: "/Seguro_Motovehiculo.webp", alt: "Seguro de Motovehículo" },
+  { id: 4, img: "/Seguro_Accidentes.webp", alt: "Seguro por Accidentes Personales" },
 ];
 
 const Carrusel = () => {
@@ -47,7 +48,7 @@ const Carrusel = () => {
             <Image
               key={item.id}
               src={item.img}
-              alt={`logo ${item.id}`}
+              alt={item.alt}
               width={364}
               height={285}
               className="block"
@@ -72,7 +73,7 @@ const Carrusel = () => {
             >
               <Image
                 src={item.img}
-                alt={`logo ${item.id}`}
+                alt={item.alt}
                 fill
                 className="object-cover rounded-xl"
               />

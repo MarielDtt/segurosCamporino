@@ -1,6 +1,11 @@
 import Construccion from "@/components/construccion";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Seguro de Vida y Retiro - Pensá en tu futuro | Seguros Camporino",
+  description: "Asegurá el bienestar de tu familia y planificá tu retiro con tranquilidad. Cotizá seguros de vida y retiro a medida, con respaldo y asesoramiento.",
+};
+
 const vida_retiro = () => {
 
     return (

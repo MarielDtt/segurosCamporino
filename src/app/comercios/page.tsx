@@ -1,5 +1,10 @@
 import Construccion from "@/components/construccion";
 import Image from "next/image";
+
+export const metadata = {
+  title: "Seguro para Comercios - Protegé tu negocio | Seguros Camporino",
+  description: "Asegurá tu local contra robo, incendio, responsabilidad civil y más. Cotizá online y encontrá la cobertura ideal para tu comercio.",
+};
 const Comercios = () => {
 
     return (

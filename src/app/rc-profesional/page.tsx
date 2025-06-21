@@ -1,6 +1,10 @@
 import Construccion from "@/components/construccion";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Seguro de Responsabilidad Civil Profesional | Seguros Camporino",
+  description: "Protegé tu actividad profesional frente a reclamos o daños a terceros. Ideal para médicos, abogados, arquitectos y más. Cotizá online.",
+};
 
 
 const Rc_Profesional = () => {

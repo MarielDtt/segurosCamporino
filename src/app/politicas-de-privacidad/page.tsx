@@ -2,6 +2,10 @@
 import { Button } from "@/components/button";
 import { useRouter } from "next/navigation";
 
+export const metadata = {
+  title: "Política de Privacidad | Seguros Camporino",
+  description: "Conocé cómo protegemos tus datos personales en Seguros Camporino. Transparencia y compromiso con tu privacidad.",
+};
 
 const Politicas = () => {
     const router = useRouter();

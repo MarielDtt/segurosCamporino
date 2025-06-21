@@ -1,6 +1,10 @@
 import Construccion from "@/components/construccion";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Seguro de Accidentes Personales - Seguros Camporino",
+  description: "Cotizá tu seguro de accidentes personales en minutos. Protección ante imprevistos para trabajadores, monotributistas y actividades independientes.",
+};
 const Accidentes = () => {
 
     return (

@@ -1,6 +1,11 @@
 import Construccion from "@/components/construccion";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Seguro para Mascotas - Cuidalos como se merecen | Seguros Camporino",
+  description: "Contratá un seguro para perros o gatos. Accidentes, enfermedades, asistencia veterinaria y más. Cotizá fácil y online.",
+};
+
 const Mascotas = () => {
 
     return (
