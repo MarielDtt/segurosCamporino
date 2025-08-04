@@ -5,22 +5,44 @@ import ScrollableIcon from "@/components/scrollableIcon";
 import SplashScreen from "@/components/splashscreen";
 import Image from 'next/image';
 import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { AnimatePresence } from "motion/react"
 import dynamic from 'next/dynamic'
 
 
 export default function Home() {
   const [splashActive, setSplashActive] = useState<boolean>(false);
+  const searchParams = useSearchParams();
+  const section = searchParams.get("section");
 
   const ComponentResenia = dynamic(() => import('../components/resenia'))
   const ComponentForm = dynamic(() => import('../components/form'))
-  
+
+
   useEffect(() => {
-    const splash = setTimeout(() => {
-      setSplashActive(true)
-    }, 4000);
-    return () => clearTimeout(splash);
+    const splashShown = sessionStorage.getItem("splashShown");
+
+    if (splashShown) {
+      // Ya se mostró el splash → lo salteamos directamente
+      setSplashActive(true);
+    } else {
+      // splash con delay + luego marcamos como mostrado
+      const splash = setTimeout(() => {
+        setSplashActive(true)
+        sessionStorage.setItem("splashShown", "true");
+      }, 4000);
+      return () => clearTimeout(splash);
+    }
   }, []);
+
+  useEffect(() => {
+    if (splashActive && section) {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [splashActive, section]);
 
   return (
     <AnimatePresence>
@@ -46,17 +68,17 @@ export default function Home() {
             <div className="w-[390px] h-auto lg:w-[860px] p-6 flex justify-center items-center bg-Background-Default m-auto">
               <Carrusel />
             </div>
-            <div className="w-[390px] lg:w-[872px] h-auto flex overflow-hidden justify-center items-center bg-Background-Default m-auto ">
+            <div  id="planes" className="w-[390px] lg:w-[872px] h-auto flex overflow-hidden justify-center items-center bg-Background-Default m-auto ">
               <ScrollableIcon />
             </div>
-            <div className="w-[390px] h-auto lg:w-[832px] flex justify-center items-center bg-Background-Default m-auto">
+            <div id="porque-elegirnos" className="w-[390px] h-auto lg:w-[832px] flex justify-center items-center bg-Background-Default m-auto">
               <Elegirnos />
             </div>
             <div className="w-[390px] h-auto lg:w-[880px] flex justify-center items-center bg-Background-Default m-auto">
               <ComponentResenia />
             </div>
-            <div className="w-[390px] h-auto lg:w-[556px] flex justify-center items-center bg-Background-Default m-auto">
-              <ComponentForm/>
+            <div id="contacto" className="w-[390px] h-auto lg:w-[556px] flex justify-center items-center bg-Background-Default m-auto">
+              <ComponentForm />
             </div>
             <a
               href="https://wa.me/5491161076870?text=Hola%2C%20quiero%20cotizar%20un%20seguro"

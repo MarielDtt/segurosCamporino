@@ -23,6 +23,7 @@ const Art = () => {
                     height={500}
                 />
             </div>*/}
+            
             <Construccion/>
         </div>
     )

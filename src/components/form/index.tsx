@@ -105,7 +105,7 @@ const Form = () => {
   const isFormInvalid = Object.values(errors).some(error => error !== "") || Object.values(formData).some(value => value.trim() === "");
 
   return (
-    <div className="w-full h-[528px] lg:w-[500px] lg:h-[540px]" id="contacto">
+    <div className="w-full h-[528px] lg:w-[500px] lg:h-[540px]">
       <p className="text-center text-title1 text-primary-600 mt-4 lg:text-display3 m-auto">Dejanos tu Consulta</p>
 
       <form className="w-[344px] h-[494px] flex flex-col items-center m-auto space-y-4 pt-4 lg:w-[500px]" onSubmit={handleOnSubmit}>

@@ -22,10 +22,10 @@ const Navbar = () => {
             </div>
             <div className='hidden lg:flex'>
                 <div className='flex text-Background-Lilac text-title3 gap-x-6'>
-                    <Link href="#porque-elegirnos" className='hover:text-secondary-300'> ¿Por qué elegirnos? </Link>
-                     <Link href="#planes" className='hover:text-secondary-300'> Planes y Coberturas </Link>
-                     <Link href="/preguntas-frecuentes" className='hover:text-secondary-300'>Preguntas Frecuentes </Link>
-                     <Link href="#contacto" className='hover:text-secondary-300'> Contacto </Link>
+                    <Link href="/?section=porque-elegirnos" className='hover:text-secondary-300'> ¿Por qué elegirnos? </Link>
+                    <Link href="/?section=planes" className='hover:text-secondary-300'> Planes y Coberturas </Link>
+                    <Link href="/preguntas-frecuentes" className='hover:text-secondary-300'>Preguntas Frecuentes </Link>
+                    <Link href="/?section=contacto" className='hover:text-secondary-300'> Contacto </Link>
                 </div>
             </div>
         </nav >

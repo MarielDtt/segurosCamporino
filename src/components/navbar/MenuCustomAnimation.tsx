@@ -39,14 +39,14 @@ export function MenuCustomAnimation() {
 
         {/* @ts-ignore */}
         <MenuItem className="!text-primary-600 text-title3">
-          <a href="#porque-elegirnos" onClick={() => setIsOpen(false)}>¿Por qué elegirnos?</a>
+          <a href="/?section=porque-elegirnos" onClick={() => setIsOpen(false)}>¿Por qué elegirnos?</a>
         </MenuItem>
 
         <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
 
         {/* @ts-ignore */}
         <MenuItem className="!text-primary-600 text-title3">
-          <a href="#planes" onClick={() => setIsOpen(false)}>Planes y Cobertura</a>
+          <a href="/?section=planes" onClick={() => setIsOpen(false)}>Planes y Cobertura</a>
         </MenuItem>
 
         <hr className="border border-secondary-800 w-[200px]  my-4 m-auto bg-secondary-800" />
@@ -59,7 +59,7 @@ export function MenuCustomAnimation() {
 
         {/* @ts-ignore */}
         <MenuItem className="!text-primary-600 text-title3">
-          <a href="#contacto" onClick={() => setIsOpen(false)}>Contacto</a>
+          <a href="/?section=contacto" onClick={() => setIsOpen(false)}>Contacto</a>
         </MenuItem>
 
       </MenuList>
