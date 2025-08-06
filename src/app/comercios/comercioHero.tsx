@@ -28,7 +28,7 @@ const ComercioHero = () => {
 
             {/* IMAGEN */}
             <div className="flex-1 flex justify-center  items-start">
-                <Image src="/Comercio.png" alt="Seguro para comercio" width={500} height={500} className="rounded-xl" />
+                <Image src="/Comercio.webp" alt="Seguro para comercio" width={500} height={500} className="rounded-xl" />
             </div>
         </div>
     )
