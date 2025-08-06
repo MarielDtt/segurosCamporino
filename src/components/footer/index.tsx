@@ -28,16 +28,18 @@ const Footer = () => {
                                 <Instagram className="w-full h-full" color="#f3f0f9" />
                             </a>
                         </div>
-                         <div className="w-10 h-10 lg:w-12 lg:h-12 pr-4">
+                        <div className="w-10 h-10 lg:w-12 lg:h-12 pr-4">
                             <a href="mailto:seguroscamporino@hotmail.com?subject=Asunto del correo&body=Cuerpo del correo" target="_blank" rel="noopener noreferrer" className='pr-4'>
-                                <Mail  className="w-full h-full" color="#f3f0f9" />
+                                <Mail className="w-full h-full" color="#f3f0f9" />
                             </a>
                         </div>
                     </div>
                 </div>
                 <hr className="w-full border-t border-white my-1" />
-                <div className='flex justify-center w-full'>
-                    <p className='text-Background-Lilac text-signal2 lg:text-title3'>© 2025 Camporino Seguros · Todos los Derechos Reservados  </p>
+                <div className="w-full text-center overflow-x-auto">
+                    <p className="whitespace-nowrap text-Background-Lilac text-signal2 lg:text-title3">
+                        © 2025 Camporino Seguros · Todos los Derechos Reservados
+                    </p>
                 </div>
                 <div className='flex mt-2 gap-x-4'>
                     <Link href="/terminos-y-condiciones">

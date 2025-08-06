@@ -11,7 +11,7 @@ export type icons = {
 const icons: icons[] = [
   { id: 1, icon: <Stethoscope size={48} color="#211657" strokeWidth={2} />, href: "rc-profesional", title: "Seguro RC Profesional" },
   { id: 2, icon: <Store size={48} color="#211657" strokeWidth={2} />, href: "/comercios", title: "Seguro Para Comercios" },
-  { id: 3, icon: <Ambulance size={48} color="#211657" strokeWidth={2} />, href: "/accidentes_personales", title: "Seguro Accidentes Personales" },
+  { id: 3, icon: <Ambulance size={48} color="#211657" strokeWidth={2} />, href: "/accidentes-personales", title: "Seguro Accidentes Personales" },
   { id: 4, icon: <Factory size={48} color="#211657" strokeWidth={2} />, href: "/art", title: "Seguros ART" },
   { id: 5, icon: <Car size={48} color="#211657" strokeWidth={2} />, href: "/autos", title: "Seguro Para Autos" },
   { id: 6, icon: <Bike size={48} color="#211657" strokeWidth={2} />, href: "/motovehiculos", title: "Seguro de Motovehiculos" },

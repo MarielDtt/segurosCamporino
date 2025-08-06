@@ -23,11 +23,13 @@ export function MenuCustomAnimation() {
       handler={setIsOpen}
     >
       <MenuHandler>
-        <MenuSandwich isOpen={isOpen} toggleMenu={() => setIsOpen(!isOpen)} />
+        <div className="min-w-[48px]">
+          <MenuSandwich isOpen={isOpen} toggleMenu={() => setIsOpen(!isOpen)} />
+        </div>
       </MenuHandler>
 
       {/* @ts-ignore */}
-      <MenuList className=" backdrop-blur-md mt-12 ml-4 w-[280px] h-[405px] bg-[rgba(243,240,249,0.9)] rounded-2xl border-4 border-secondary-800">
+      <MenuList className=" z-[9999] backdrop-blur-md ml-4 w-[280px] h-[405px] bg-[rgba(243,240,249,0.9)] rounded-2xl border-4 border-secondary-800">
         <Image
           src="/Logo_C.webp"
           width={40}
