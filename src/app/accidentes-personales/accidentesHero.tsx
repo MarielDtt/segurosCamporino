@@ -9,7 +9,7 @@ const AccidentesHero = () => {
         <div className="w-full aspect-[16/12] sm:aspect-[16/6] relative m-auto rounded-2xl overflow-hidden ">
 
             <Image
-                src="/Accidentes-Personales.png"
+                src="/Accidentes-Personales.webp"
                 alt="Accidentes Personales"
                 fill
                 className=" "
