@@ -21,7 +21,7 @@ const Accidentes = () => {
                     <p className="text-title1 sm:text-title2 font-bold text-white">
                         Protección estés donde estés
                     </p>
-                    <p className="text-body text-white mt-2 leading-snug sm:text-signal2">
+                    <p className="text-body text-white mt-2 leading-snug sm:text-signal">
                         Ya sea en el trabajo, en tu casa o en la calle, estás cubierto ante cualquier accidente personal.
                     </p>
                 </div>
@@ -31,7 +31,7 @@ const Accidentes = () => {
                     <p className="text-title1 sm:text-title2 font-bold text-white">
                         Contratalo online, sin demoras
                     </p>
-                    <p className="text-body text-white mt-2 leading-snug sm:text-signal2">
+                    <p className="text-body text-white mt-2 leading-snug sm:text-signal">
                         Completás la solicitud 100% online, sin trámites ni demoras. Nuestros asesores están disponibles para ayudarte en cada paso. Si tenés dudas, podés comunicarte cuando lo necesites.
                     </p>
                 </div>
@@ -41,7 +41,7 @@ const Accidentes = () => {
                     <p className="text-title1 sm:text-title2 font-bold text-white">
                         Tranquilidad para vos y tu familia
                     </p>
-                    <p className="text-body text-white mt-2 leading-snug sm:text-signal2">
+                    <p className="text-body text-white mt-2 leading-snug sm:text-signal">
                         Contar con un seguro de accidentes personales no solo te protege a vos, sino que también le da calma a tu entorno. Saber que tenés respaldo en situaciones inesperadas brinda seguridad emocional y económica.
                     </p>
                 </div>
@@ -51,7 +51,7 @@ const Accidentes = () => {
                     <p className="text-title1 sm:text-title2 font-bold text-white">
                         Respaldo económico
                     </p>
-                    <p className="text-body text-white mt-2 leading-snug sm:text-signal2">
+                    <p className="text-body text-white mt-2 leading-snug sm:text-signal">
                         Si sufrís un accidente y no podés trabajar, accedés a una compensación rápida para cubrir tus gastos.
                     </p>
                 </div>
