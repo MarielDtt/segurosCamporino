@@ -7,12 +7,12 @@ const faqs = [
   {
     pregunta: "¿Quién puede contratar los productos de Seguro de Comercio?",
     respuesta:
-      "Puede suscribir tanto el titular del comercio, como la persona encargada del mismo.",
+      "Puede suscribir cualquier Persona mayor de 18 años .",
   },
   {
     pregunta: "¿Qué opciones de cobertura tengo?",
     respuesta:
-      "Teniendo en cuenta la situación del comercio y su administración, contás con dos opciones de contratación: un seguro personalizado, indicando los valores de cada riesgo por separado; y otra más rápida y ágil, como es el producto Combo Plus.",
+      "Teniendo en cuenta la situación del comercio y su administración, contás con dos opciones de contratación: un seguro personalizado, indicando los valores de cada riesgo por separado; y otra más rápida y ágil, como es el producto con valores predeterminados.",
   },
 ];
 
