@@ -3,7 +3,7 @@ import { Button } from "@/components/button";
 import Image from "next/image";
 
 const ComercioHero = () => {
-    const whatsappLink = "https://wa.me/5491161076870?text=Hola%2C%20quiero%20cotizar%20un%20seguro%20de%20comercio";
+    const whatsappLink = "https://wa.me/5491165089023?text=Hola%2C%20quiero%20cotizar%20un%20seguro%20de%20comercio";
 
     return (
         <div className="w-full max-w-[1200px] mx-auto flex flex-col lg:flex-row p-8 space-x-0 lg:space-x-12 bg-Background-Lilac">

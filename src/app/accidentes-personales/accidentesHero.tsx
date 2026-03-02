@@ -3,7 +3,7 @@ import { Button } from "@/components/button";
 import Image from "next/image";
 
 const AccidentesHero = () => {
-    const whatsappLink = "https://wa.me/5491161076870?text=Hola%2C%20quiero%20cotizar%20un%20seguro%20de%20accidentes%20personales";
+    const whatsappLink = "https://wa.me/5491165089023?text=Hola%2C%20quiero%20cotizar%20un%20seguro%20de%20accidentes%20personales";
 
     return (
         <div className="w-full aspect-[16/12] sm:aspect-[16/6] relative m-auto rounded-2xl overflow-hidden ">
