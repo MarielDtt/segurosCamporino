@@ -49,9 +49,21 @@ const Footer = () => {
                         <p className='underline text-Background-Lilac text-signal2 lg:text-subtitle2'>Política de privacidad</p>
                     </Link>
                 </div>
-                <div className='mt-2'>
-                    <p className='text-Background-Lilac text-signal3 lg:text-bodyBold'>Diseñado por @MarielDtt</p>
+               
+                <div className="mt-2 text-center">
+                    <p className="text-Background-Lilac text-signal3 lg:text-bodyBold">
+                        Diseño y desarrollo web por{" "}
+                        <a
+                            href="https://medigital.com.ar/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-semibold hover:underline transition-all"
+                        >
+                            ME Digital
+                        </a>
+                    </p>
                 </div>
+
             </div>
         </div >
     )
